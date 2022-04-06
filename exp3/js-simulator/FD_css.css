@@ -1,0 +1,184 @@
+/*Document Name:FD_css.css
+    Author:Piyali Chattopadhyay
+	Research Engineer,VLABS IIT KGP*/
+
+
+
+.custombutton {
+  padding: 15px 25px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: #45E2E4;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.custombutton:hover {background-color: #2CB6B8}
+
+.custombutton:active {
+  background-color: #2CB6B8;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}	
+	
+	.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: absolute;
+  top: -100px;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+#anim{display:-webkit-box;-webkit-box-pack:center;opacity:1.5; duration: 4;}
+
+
+#div1 {
+  width: 100px;
+  height: 15px;
+  padding: 0px;
+  border: 1px dotted black;
+}
+#div2 {
+  width: 100px;
+  height: 15px;
+  padding: 0px;
+  border: 1px dotted black;
+}
+#div3 {
+  width: 100px;
+  height: 15px;
+  padding: 0px;
+  border: 1px dotted black;
+}
+#div4 {
+  width: 100px;
+  height: 15px;
+  padding: 0px;
+  border: 1px dotted black;
+}	
+.vapour{
+
+position:relative;
+top:150px;
+right:-900px;
+display:flex;
+z-index:1;
+padding: 0 20px;
+
+}
+.vapourspan{
+position:relative;
+top:50px;
+right:0px;
+display:none;
+margin: 0 2px 50px;
+min-width:8px;
+height:120px;
+background:#AFB6B6;
+border-radius:50px;
+animation: animate 5s linear infinite;
+opacity:0;
+filter: blur(8px);
+animation-delay:calc(var(--i)* 0.5s);
+}
+
+@keyframes animate{
+	0%
+	{
+		transform: translateY(0) scaleX(1);
+		opacity:0;
+	}
+	15%
+	{
+		
+		opacity:1;
+	}
+	50%
+	{
+		transform: translateY(-150px) scaleX(1);
+	}
+	95%
+	{
+		
+		opacity:0;
+	}
+	100%
+	{
+		transform: translateY(-300px) scaleX(1);
+	}
+		
+}
+
+.blink {
+        animation: blinker 0.6s linear infinite;
+        color: #E50927;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: sans-serif;
+      }
+      @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+      }
+	  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

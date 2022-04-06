@@ -1,0 +1,128 @@
+<!--Document Name:FlashDrum.html
+    Author:Piyali Chattopadhyay
+	Research Engineer,VLABS IIT KGP--->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Flash Drum</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="FD_css.css">
+	
+	
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+	<script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
+	<style>
+	
+	 
+	
+	
+	</style>
+	
+  </head>
+
+  <body >
+  
+  <h2 style="text-align:center"> Flash Distillation (Ethanol and Water)</h2>
+  <img id="img" src="images/inlet0.png "style="position:absolute;top:90px;right:600px"/>
+  <input type="button" id="inlet" onclick="inletfeed()"class="custombutton" value="Inlet"style="position:absolute;top:400px;left:580px">
+  <input type="button" id="start" onclick="simulatefeed()"class="custombutton" value="Start"style="position:absolute;top:400px;left:680px">
+  
+  <div class="dropdown"style="position:absolute;top:400px;left:780px;width:500px;height:200px ">
+  <input type="button" id="plot" onclick=""class="custombutton" value="Plot">
+  <div class="dropdown-content">
+  <a onclick="plotyx()">Y-X Diagram</a>
+  <a onclick="plotTyx()"> T<sub>X-Y</sub> Diagram</a>
+  </div>
+  </div>
+  
+  
+  <!------ Dropdown Hover---------------------->
+	<div class="dropdown" style="position:absolute;top:90px;left:50px;width:500px;height:200px ">
+  <p style="color:#B3061D"><b>INSTRUCTIONS</b></p>
+  <div class="dropdown-content" style="color:#025167">
+  <ol type="1">
+  <li>Click on "Inlet" button to inlet the feed of Ethanol and Water binary mixture to Flash drum.</li></br>
+  
+  <li>Click on "Start" button th start the flash distillation process.Wait till smoke comes out.</li></br>
+  
+  <li>The process is done under constant pressure of 1 atm or 101.3kPa with increasing temperature(upto 100&#8451;)</li><br/>
+  
+<li>Aftr the smoke comes out click on "Y-X Diagram" under "Plot" button to observe the McCabe-Thiele diagram for the EtOH-water binary mixture.This is the equilibrium curve.</li><br/> 
+
+
+<li>Click on 'T<sub>X-Y</sub> Diagram' under "Plot",to obser the T vs. X and T vs. Y curve for EtOH-water binary mixture.Also note the 'Bubble Point' temperature. </li><br/>
+
+
+  </ol>	
+  </div>
+  </div>
+ <!----- Smoke Animation----------------->
+<div class="vapour" >
+<span class="vapourspan"style="--i:1;"></span>
+<span class="vapourspan"style="--i:3;"></span>
+<span class="vapourspan"style="--i:16;"></span>
+<span class="vapourspan"style="--i:5;"></span>
+<span class="vapourspan"style="--i:20;"></span>
+<span class="vapourspan"style="--i:6;"></span>
+<span class="vapourspan"style="--i:7;"></span>
+<span class="vapourspan"style="--i:9;"></span>
+<span class="vapourspan"style="--i:10;"></span>
+<span class="vapourspan" style="--i:17;"></span>
+<!--<span style="--i:11;"></span>
+<span style="--i:12;"></span>
+<span style="--i:13;"></span>
+<span style="--i:14;"></span>
+<span style="--i:2;"></span>
+<span style="--i:8;"></span>
+<span style="--i:15;"></span>
+<span style="--i:4;"></span>
+<span style="--i:19;"></span>-->
+</div>
+<p class="blink" id="blinkingtext" style="display:none;position:absolute;top:300px;right:600px">100&#8451;</p>
+
+<!------------------------ Plot Section--------------------------->
+<div id="chartContainer"style="display:block;  position:absolute; top:500px; left:800px; height: 350px; width: 40%;"></div>
+<div id="chartContainer2"style="display:block;  position:absolute; top:500px; left:800px; height: 350px; width: 40%;"></div>
+<input type="image" onclick="hideplot()"id="closediv" src="images/led_off.png" style="display:none;z-index:1; position:absolute; top:500px; right:350px; height: 20px; width:20px;border: 2px solid black">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  
+ 
+  
+  </body>
+ <script  src="FD_js.js">   </script> 
+  </html>
